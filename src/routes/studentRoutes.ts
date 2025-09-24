@@ -53,7 +53,7 @@ try {
   } catch (err) {
     return res.json({
       success: false,
-      message: "Somthing is wrong, please try again",
+      message: "Something is wrong, please try again",
       error: err,
     });
   }

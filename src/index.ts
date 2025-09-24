@@ -10,7 +10,9 @@ const app: any = express();
 app.use(express.json());
 app.use(morgan('dev'));
 
-
+app.get("/", (req : Request, res: Response) => {
+ return res.json({"success":true,"message":"lab 15 API service successfully"})
+})
 app.use("/api/v2/",router);
 app.use("/api/v2/",courseRouter);
 app.get("/me", (req: Request, res: Response) => {
